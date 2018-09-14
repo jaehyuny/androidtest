@@ -1,29 +1,30 @@
 package jaebee2002.naver.com.androidtest;
 
+import android.content.Context;
+import android.widget.ListView;
+
 public class ChatData {
     private String userName;
     private String message;
+    private String time;
 
     public ChatData() { }
 
-    public ChatData(String userName, String message) {
+    public ChatData(String userName, String message, String time) {
         this.userName = userName;
         this.message = message;
+        this.time = time;
     }
 
     public String getUserName() {
         return userName;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
     public String getMessage() {
         return message;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public String getTime() {
+        return time;
     }
 }
